@@ -30,7 +30,7 @@ tuple_1 = ('1:00PM', 2.00, '3:PM', 4)
 print(type(tuple_1))
 print(tuple_1[2])
 
-"""1. Create list containing the three object types create above.
+"""1. Create list containing the three object types created above.
 2. Print the value of the first position in the first object (list_1) in the list."""
 
 list_2 = [list_1, dict_1, tuple_1]
