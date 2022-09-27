@@ -15,9 +15,13 @@ tuple_1 = ('1:00PM', 2.00, '3:PM', 4)  # Create a tuple with strings, floats, an
 print(type(tuple_1))  # Confirm the tuple object type.
 print(tuple_1[2])  # Print the value of the 3rd index position in the tuple.
 
-list_2 = [list_1, dict_1, tuple_1, "hello world"]  # Create list containing the four object types created above.
-print(len(list_2)) # Confirm how many index positions in list_2.
-print(len(list_2[0])) # Confirm how many index positions in the first object in list_2.
-print(list_2[0]) # Print the whole object in the first position of list_2.
-print(list_2[0][0])  # Print the value of the first position in the first object (list_1) in list_2.
-print(list_2[3])  # Print "hello world" from list_2.
+list_2 = [list_1, dict_1, tuple_1, '"hello world"']  # Create list containing the four object types created above.
+print("There are " + str(len(list_2)) + " objects in list_2!")  # Confirm how many index positions in list_2.
+print("The first object in list_2 is: " + str(list_2[0][0]))  # Print the value of the first position in the -
+# first object (list_1) in list_2.
+print("There are " + str(len(list_2[0])) + " objects in list_1!")  # Confirm how many index positions in the -
+# first object in list_2.
+print("These are the objects in list_1: " + str(list_2[0]) + " which is in the first position in list_2!") # Print -
+# the whole object in the first position of list_2.
+
+print(list_2[3] + ' is the fourth object in list_2!')  # Print "hello world" from list_2.
